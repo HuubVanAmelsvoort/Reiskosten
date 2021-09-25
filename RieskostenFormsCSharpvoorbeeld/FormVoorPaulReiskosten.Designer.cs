@@ -35,6 +35,7 @@
       this.textBoxUitkomst = new System.Windows.Forms.TextBox();
       this.label4 = new System.Windows.Forms.Label();
       this.label5 = new System.Windows.Forms.Label();
+      this.label6 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // buttonBerekenen
@@ -138,11 +139,22 @@
       this.label5.Text = "( Het gemiddelde is 14 kilometer per liter voor een personenauto. Typ in dat geva" +
     "l 14 in )";
       // 
+      // label6
+      // 
+      this.label6.AutoSize = true;
+      this.label6.Location = new System.Drawing.Point(514, 167);
+      this.label6.Name = "label6";
+      this.label6.Size = new System.Drawing.Size(35, 13);
+      this.label6.TabIndex = 12;
+      this.label6.Text = "label6";
+      this.label6.Click += new System.EventHandler(this.label6_Click);
+      // 
       // FormVoorPaulReiskosten
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(822, 246);
+      this.Controls.Add(this.label6);
       this.Controls.Add(this.label5);
       this.Controls.Add(this.label4);
       this.Controls.Add(this.textBoxUitkomst);
@@ -176,6 +188,7 @@
     public System.Windows.Forms.TextBox textBoxUitkomst;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.Label label5;
+    public System.Windows.Forms.Label label6;
   }
 }
 

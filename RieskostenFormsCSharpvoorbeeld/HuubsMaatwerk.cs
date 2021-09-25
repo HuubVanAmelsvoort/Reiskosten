@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RieskostenFormsCSharpvoorbeeld {
   class HuubsMaatwerk {
@@ -21,10 +17,11 @@ namespace RieskostenFormsCSharpvoorbeeld {
       decimal kosten = kilometer / gemiddelde * benzineprijs;
       decimal uitkomst = Math.Round(kosten / kilometer, 2);
 
-      String deTekst = String.Format("Ok, je rit van {0} kilometer kostte € {1:C2} (afgerond op 2 decimalen).\n De kosten per kilometer waren €{2:C2}."
+      String deTekst = String.Format("Ok, je rit van {0} kilometer kostte {1:C2} (afgerond op 2 decimalen).\n De kosten per kilometer waren {2:C2}."
               , kilometer, kosten, uitkomst);
 
       formulier.textBoxUitkomst.Text = deTekst;
+      formulier.label6.Text = "Ha die Paul";
     }
   }
 }
